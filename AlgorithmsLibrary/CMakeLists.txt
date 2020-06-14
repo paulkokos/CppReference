@@ -1,3 +1,4 @@
 add_subdirectory(all_of_any_of_none_of)
 add_subdirectory(for_each)
 add_subdirectory(for_each_n)
+add_subdirectory(count_if_count)

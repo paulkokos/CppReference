@@ -3,6 +3,6 @@ project(CppReference)
 
 set(CMAKE_CXX_STANDARD 20)
 
-#set(SOURCE_FILES StandardLibraryHeaders/UtilitiesLibrary/variant/variant/variant.cpp AlgorithmsLibrary/all_of_any_of_none_of/main.cpp)
+#set(SOURCE_FILES StandardLibraryHeaders/UtilitiesLibrary/variant/variant/variant.cpp)
 #add_executable(CppReference ${SOURCE_FILES})
 add_subdirectory(AlgorithmsLibrary)
