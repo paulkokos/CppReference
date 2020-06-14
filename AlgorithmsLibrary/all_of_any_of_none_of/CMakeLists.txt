@@ -1,0 +1,1 @@
+add_executable(all_main_none_of main.cpp)
