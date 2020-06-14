@@ -1,1 +1,1 @@
-add_executable(all_main_none_of main.cpp)
+add_executable(all_main_none_of main.cpp ../for_each/main.cpp)

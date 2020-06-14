@@ -1,0 +1,1 @@
+add_executable(for_each main.cpp)
