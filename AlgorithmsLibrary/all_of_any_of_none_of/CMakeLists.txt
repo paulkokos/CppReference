@@ -1,1 +1,1 @@
-add_executable(all_main_none_of main.cpp ../for_each/main.cpp ../for_each_n/for_each_n.cpp ../mismatch/mismatch.cpp)
+add_executable(all_main_none_of main.cpp ../for_each/main.cpp ../for_each_n/for_each_n.cpp ../mismatch/mismatch.cpp ../find_if_find_if_not_find/find_if_find_if_not_if.cpp)
