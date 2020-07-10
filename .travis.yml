@@ -60,5 +60,5 @@ matrix:
 
 before_install:
   - eval "${MATRIX_EVAL}"
-script:
-  - ls
+before_script:
+  - cd CppReference
