@@ -22,6 +22,7 @@ matrix:
       env:
         - MATRIX_EVAL="CC=gcc-10 && CXX=g++-10"
 
+
     # works on Precise and Trusty
     - os: linux
       addons:
