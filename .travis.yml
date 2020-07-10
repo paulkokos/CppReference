@@ -77,8 +77,7 @@ install:
 
 
 script:
-  - cd paulkokos/CppReference
-  - git clone https://github.com/paulkokos/CppReference ./ CppReference
+  - git clone https://github.com/paulkokos/CppReference ./CppReference
   - cd CppReference
   - ./configure && make && make test
 
