@@ -75,6 +75,6 @@ before_install:
   - eval "${MATRIX_EVAL}"
 script:
   - cd paulkokos/CppReference
-  - git https://github.com/paulkokos/CppReference.git
+  - git clone https://github.com/paulkokos/CppReference.git
   - cd CppReference
   - ./configure && make && make test
