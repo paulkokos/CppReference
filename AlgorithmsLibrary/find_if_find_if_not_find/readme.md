@@ -1,4 +1,4 @@
-#### ```std::find()```, ```std::find_if()```, ```std::find_if_not()```<br>
+# ```std::find()```, ```std::find_if()```, ```std::find_if_not()```<br>
 
 * ```find()```<br>
 Η ```find()``` ψάχνει για ένα στοίχειο ίσο με την τιμή που έχει δωθεί.<br>

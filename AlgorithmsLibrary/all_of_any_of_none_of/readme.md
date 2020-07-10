@@ -1,3 +1,4 @@
+# ```all_of()``` , ```any_of()``` , ```none_of()``` 
 * ```all_of()``` <br>
 Ελεγχει εαν το ```unary predicate p  ``` επιστρεφει  ```true``` για ολα τα στοιχεια του ευρους```[first,last]```.<br>
 * ```any_of()```<br>
