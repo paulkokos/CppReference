@@ -9,6 +9,9 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-9
+            - cmake
+            - make
+            - gdb
       env:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
 
@@ -20,6 +23,9 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-9
+            - cmake
+            - make
+            - gdb
       env:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
 
@@ -32,6 +38,9 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-9
+            - cmake
+            - make
+            - gdb
       env:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
 
@@ -43,9 +52,11 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-9
+            - cmake
+            - make
+            - gdb
       env:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
 
 before_install:
-  - sudo apt install cmake make gdb
   - eval "${MATRIX_EVAL}"
