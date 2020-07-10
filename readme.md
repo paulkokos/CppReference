@@ -1,4 +1,4 @@
-<h1>C++ reference Project</h1> [![Build Status](https://travis-ci.com/paulkokos/CppReference.svg?branch=master)](https://travis-ci.com/paulkokos/CppReference)
+<h1>C++ reference Project</h1> [![Build Status](https://travis-ci.org/paulkokos/CppReference.svg?branch=master)](https://travis-ci.org/paulkokos/CppReference)
 
 
 
