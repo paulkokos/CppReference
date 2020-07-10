@@ -15,9 +15,7 @@ matrix:
             - gdb
       env:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
-        - STATS_TEST_USE_STDVEC="y"
-        - CCOV=gcov-10 && CXXCOV=gcov-10
-        - STATS_TEST_RUN_COV="y"
+
       compiler: gcc          # works on Precise and Trusty
 
     - os: linux
@@ -32,9 +30,7 @@ matrix:
             - gdb
       env:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
-        - STATS_TEST_USE_STDVEC="y"
-        - CCOV=gcov-10 && CXXCOV=gcov-10
-        - STATS_TEST_RUN_COV="y"
+
 
 
     # works on Precise and Trusty
@@ -50,9 +46,7 @@ matrix:
             - gdb
       env:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
-        - STATS_TEST_USE_STDVEC="y"
-        - CCOV=gcov-10 && CXXCOV=gcov-10
-        - STATS_TEST_RUN_COV="y"
+
 
     # works on Precise and Trusty
     - os: linux
@@ -67,14 +61,31 @@ matrix:
             - gdb
       env:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
-        - STATS_TEST_USE_STDVEC="y"
-        - CCOV=gcov-10 && CXXCOV=gcov-10
-        - STATS_TEST_RUN_COV="y"
 
 before_install:
   - eval "${MATRIX_EVAL}"
+
+install:
+  - |
+    if [[ "${TRAVIS_OS_NAME}" == "linux" ]]; then
+      sudo apt-get update
+      sudo apt-get install libblas-dev liblapack-dev
+    # else
+      # OSX
+      # brew upgrade gcc || brew install gcc
+    fi
+
+
 script:
   - cd paulkokos/CppReference
-  - git clone https://github.com/paulkokos/CppReference.git
+  - git clone https://github.com/paulkokos/CppReference ./ CppReference
   - cd CppReference
   - ./configure && make && make test
+
+after_failure:
+      - ./travis-tool.sh dump_logs
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
