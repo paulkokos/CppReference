@@ -1,0 +1,1 @@
+add_executable(find_first_of find_first_of.cpp)
