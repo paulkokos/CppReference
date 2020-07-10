@@ -47,4 +47,5 @@ matrix:
         - MATRIX_EVAL="CC=gcc-9 && CXX=g++-9"
 
 before_install:
+  - sudo apt install cmake make gdb
   - eval "${MATRIX_EVAL}"
