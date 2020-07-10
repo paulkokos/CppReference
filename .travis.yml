@@ -61,4 +61,4 @@ matrix:
 before_install:
   - eval "${MATRIX_EVAL}"
 before_script:
-  - ls
+  - cd paulkokos/CppReference
