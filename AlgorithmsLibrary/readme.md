@@ -1,12 +1,11 @@
-Non-modifying sequence operations
-Defined in header <algorithm>
-all_of
-any_of
-none_of
-  
-(C++11)
-(C++11)
-(C++11)
+### <b>Non-modifying sequence operations</b> <br>
+Defined in header ```<algorithm>```<br>
+
+<hr>
+
+<b>all_of</b> (C++11)<br>
+<b>any_of</b> (C++11)<br>
+<b>none_of</b> (C++11)<br>
  
 checks if a predicate is true for all, any or none of the elements in a range
 (function template)
