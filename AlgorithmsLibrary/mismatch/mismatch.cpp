@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 std::string mirror_ends(const std::string& in)
 {

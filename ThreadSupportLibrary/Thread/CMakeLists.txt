@@ -1,1 +1,1 @@
-add_executable(thread main.cpp ../joinable/joinable.cpp)
+add_executable(thread main.cpp)
